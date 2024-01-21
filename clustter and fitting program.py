@@ -247,6 +247,7 @@ for ic in range(4):
 plt.xlabel("Years")
 plt.ylabel("GDP Per Capita")
 plt.title("GDP per capita after clustering with 4 clusters")
+plt.legend()
 plt.show()
 
 # Generate predictions for the next 10 years using the cluster model
