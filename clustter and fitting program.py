@@ -154,6 +154,7 @@ plt.plot(df_pop["Years"], df_pop["World"])
 plt.xlabel("Year")
 plt.ylabel("Population")
 plt.title("Population growth graph before fitting")
+plt.legend()
 plt.show()
 
 # Convert values from float to numeric
