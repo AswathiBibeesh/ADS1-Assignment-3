@@ -221,6 +221,7 @@ plt.plot(df_gdp_countries["Years"], df_gdp_countries["World"])
 plt.xlabel("Years")
 plt.ylabel("GDP Per Capita")
 plt.title("GDP per capita graph Before clustering")
+plt.legend()
 plt.show()
 
 # Extract columns for fitting and normalize
