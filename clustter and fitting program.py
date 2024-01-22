@@ -131,7 +131,7 @@ def generate_predictions(df_gdp_countries, norm_func, kmeans_func, n_clusters=4)
     prediction_df = pd.DataFrame({"Years": future_years, "Predicted_Cluster": future_labels})
     return prediction_df
 
-# Reads the files into dataframes
+# Read the files into dataframes
 df_pop_total, df_pop = read_file("C:\\Users\\aswat\Downloads\\population_growth\\API_SP.POP.GROW_DS2_en_csv_v2_6298705.csv")
 df_gdp_total, df_gdp_countries = read_file("C:\\Users\\aswat\\Downloads\\GDP_per_capita\\API_NY.GDP.PCAP.KD.ZG_DS2_en_csv_v2_6298776.csv")
 
@@ -157,7 +157,7 @@ plt.title("Population growth graph before fitting")
 plt.legend()
 plt.show()
 
-# Convert values from float to numeric
+# Converting values from float to numeric
 df_pop["Years"] = pd.to_numeric(df_pop["Years"])
 df_pop["World"] = pd.to_numeric(df_pop["World"])
 
